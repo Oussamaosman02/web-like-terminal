@@ -1,6 +1,9 @@
 .container {
   background-color: black;
 }
+.container p {
+  color: wheat;
+}
 
 .title {
   color: #0070f3;
@@ -15,6 +18,9 @@
   flex-direction: column;
 }
 
+.terminal a {
+  color: navy;
+}
 .terminal span {
   font-size: 0.9rem;
 }
@@ -22,10 +28,14 @@
 .inpcont {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 .inpcont span {
   color: red;
+  width: fit-content;
 }
 
 .inpu:active,
@@ -37,9 +47,10 @@
   color: whitesmoke;
   border: none;
   outline: none;
-  caret-color: #0070f3;
-  cursor: pointer;
+  caret-color: #fff;
+  cursor: grab;
   box-shadow: none;
-  width: 80vw;
-  height: 4vh;
+  font-size: 0.9rem;
+  width: 80%;
+  height: 3.5vh;
 }
